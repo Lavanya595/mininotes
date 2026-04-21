@@ -17,7 +17,7 @@ app.get('/api/health', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/mini-notes';
+const MONGO_URI = process.env.MONGO_URI ;
 
 mongoose
   .connect(MONGO_URI)
