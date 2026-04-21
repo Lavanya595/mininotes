@@ -1,0 +1,118 @@
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fafaf7;
+  position: relative;
+  overflow: hidden;
+}
+
+.land-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.land-bg span {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.07;
+  animation: floatEmoji 6s ease-in-out infinite;
+}
+
+.land-bg span:nth-child(1) { top: 10%; left: 8%; animation-delay: 0s; }
+.land-bg span:nth-child(2) { top: 20%; right: 12%; animation-delay: 1s; font-size: 1.8rem; }
+.land-bg span:nth-child(3) { bottom: 20%; left: 15%; animation-delay: 2s; font-size: 3rem; }
+.land-bg span:nth-child(4) { bottom: 15%; right: 10%; animation-delay: 0.5s; font-size: 2rem; }
+.land-bg span:nth-child(5) { top: 55%; left: 5%; animation-delay: 3s; font-size: 1.5rem; }
+
+@keyframes floatEmoji {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-18px) rotate(3deg); }
+}
+
+.land-content {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.land-badge {
+  background: #e85d26;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.land-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 10vw, 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.land-title span {
+  color: #e85d26;
+}
+
+.land-sub {
+  font-size: 1.05rem;
+  color: #4a4a6a;
+  max-width: 400px;
+  line-height: 1.7;
+  margin: 0 auto 2.5rem auto;
+}
+
+.land-btn {
+  background: #1a1a2e;
+  color: #ffffff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.land-btn:hover {
+  background: #e85d26;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(232, 93, 38, 0.35);
+}
+
+.land-features {
+  display: flex;
+  gap: 10px;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.land-feat {
+  background: #ffffff;
+  border: 1.5px solid #e0dfd6;
+  border-radius: 10px;
+  padding: 7px 16px;
+  font-size: 0.83rem;
+  color: #4a4a6a;
+  font-weight: 500;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.land-feat:hover {
+  border-color: #e85d26;
+  color: #e85d26;
+}

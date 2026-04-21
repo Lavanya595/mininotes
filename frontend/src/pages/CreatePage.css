@@ -1,0 +1,122 @@
+.create-page {
+  padding: 1.8rem 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.create-panel {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem;
+  border: 1.5px solid #e0dfd6;
+  box-shadow: 0 2px 12px rgba(26, 26, 46, 0.08);
+}
+
+.create-panel h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1a1a2e;
+  margin-bottom: 1.4rem;
+}
+
+.form-row {
+  margin-bottom: 1.2rem;
+}
+
+.form-row label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #4a4a6a;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #e0dfd6;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a2e;
+  background: #fafaf7;
+  transition: border-color 0.2s, background 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: #e85d26;
+  background: #ffffff;
+}
+
+.form-row input.input-error,
+.form-row textarea.input-error {
+  border-color: #c0392b;
+}
+
+.field-error {
+  display: block;
+  font-size: 0.8rem;
+  color: #c0392b;
+  margin-top: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.btn-save {
+  background: #1a1a2e;
+  color: #ffffff;
+  border: none;
+  padding: 11px 28px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-save:hover:not(:disabled) {
+  background: #e85d26;
+  transform: translateY(-1px);
+}
+
+.btn-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #4a4a6a;
+  border: 1.5px solid #e0dfd6;
+  padding: 11px 24px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  border-color: #4a4a6a;
+  color: #1a1a2e;
+}
+
+.btn-cancel:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,20 @@
+.loading-bar {
+  height: 3px;
+  background: #e8e7de;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.loading-bar-inner {
+  height: 100%;
+  width: 45%;
+  background: linear-gradient(90deg, #e85d26, #f5a623);
+  border-radius: 2px;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(280%); }
+}
